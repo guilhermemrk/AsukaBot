@@ -1,0 +1,16 @@
+{
+  "name": "asuka-bot",
+  "version": "1.0.0",
+  "description": "donator module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Akai-#0001",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "moment": "^2.24.0",
+    "sqlite3": "^4.0.9"
+  }
+}

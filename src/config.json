@@ -1,0 +1,11 @@
+{
+  "token": "NjA1MzgyNTg1ODI0MzEzMzcy.XT75DA.x-0PAgmBqJ_mPxz-XphfBL7eYNA",
+  "botid": "605382585824313372",
+  "prefix": ";",
+  "ownerid": "210528791716429825",
+  "adminRole": "590380792933384193",
+  "dbpath": "./src/data/database.db",
+  "donatorRole": "590384740989796392",
+  "noPermissionTo": "No perms!",
+  "embedERRORColor": "16539487"
+}
