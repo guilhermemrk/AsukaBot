@@ -5,7 +5,7 @@ const DonatorRemove = require('./remove')
 const DonatorCheck = require('./check')
 
 const DonatorCommands = (client, message, args, command, config, m_db, m_default, moment, m_donator) => {
-  const donatorRole = message.guild.roles.get(config.donatorRole);
+  const donatorRole = message.guild.roles.get(config.dtier1);
   const adminRole = message.guild.roles.get(config.adminRole);
   var server = message.guild.id;
 
@@ -14,7 +14,7 @@ const DonatorCommands = (client, message, args, command, config, m_db, m_default
       args[1] = message.member.user.id;
       m_donator.DonatorShow.DonatorShow(message, args, config, m_db, moment, server);
     } else if (args[0] == undefined && !message.member.roles.has(donatorRole.id)){
-      let noPerms = m_default.NoPerms.NoPerms(message, config);
+      let noPerms = m_default.BlankEmbed.BlankEmbed(message, config.embedERRORColor, `You're not a Donator!`);
     } else if (args[0] == 'show' && message.member.roles.has(adminRole.id)){
       m_donator.DonatorShow.DonatorShow(message, args, config, m_db, moment, server);
     } else if (args[0] == 'show' && !message.member.roles.has(adminRole.id)){
